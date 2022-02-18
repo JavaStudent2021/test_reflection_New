@@ -25,11 +25,9 @@ public class SearchFile {
                 searchF(namePath + "\\" + f.getName());
             } else if (f.isFile()) {
                 System.out.print("\t");
-                String str = f.getName();
-                String[] q = str.split("\\.");
                 //System.out.println("str - "  + str);
-                String pathFile = namePath;
-                String namClass = q[0];
+
+                String namClass = f.getName().split("\\.")[0];
 
                 String[] lastPath = namePath.split("\\\\java\\\\");
                 String namePathFile = (lastPath[1] + "\\" + namClass).replaceAll("\\\\", "\\.");
@@ -40,7 +38,7 @@ public class SearchFile {
                 //System.out.println("cazz.getName() - " + cazz.getAnnotations());
 
 
-                if (q[0].equals("BetDaoImpl")){
+                if (namClass.equals("BetDaoImpl")) {
                     System.out.println("BAY!!!!!!!!!");
                     Annotation[] annotations = cazz.getAnnotations();
                     System.out.println("annotations = " + annotations.length);
