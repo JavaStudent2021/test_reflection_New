@@ -3,6 +3,7 @@ package com.vu.dao.impl;
 import com.vu.dao.BetDao;
 import com.vu.lib.Dao;
 import com.vu.model.Bet;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -10,7 +11,6 @@ import java.util.List;
 public class BetDaoImpl implements BetDao {
     @Override
     public void add(Bet bet) {
-
     }
 
     @Override
