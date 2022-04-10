@@ -16,5 +16,7 @@ public class Main {
         consoleHandler.handle();
 
        // SearchFile.searchF("C:\\New folder\\Dady\\java_\\java-cours\\advanced_course\\src\\main\\java\\com\\vu"); //"/home/viktor/java_/itvdn/other/test_reflection_New/src/main/java/com/vu"); //C:\DiskD\09-11-2012_2\для Виктора\Для планшету\Java\other_itvdn\test_reflection_New\src\main\java\com\vu
+
+        System.out.println("Hello!");
     }
 }
